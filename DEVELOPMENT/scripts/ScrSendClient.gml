@@ -6,7 +6,7 @@
 3=Room defined in ID, good for sending to other players in their rooms
 */
 
-
+if instance_exists(ObjClient)
 switch(argument0)
 {
     case 0:

@@ -8,11 +8,5 @@
     i.facedir = readint(0);
     
     
-    if global.isHost==true
-        {
-        ScrSendClient(2,playerID,false);
-        }
-    
-    
     
 clearbuffer(0);

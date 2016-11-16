@@ -2,7 +2,7 @@
 if (IsOnline()==true && ownerID=global.playerID)
     {
     clearbuffer(0);
-    writebyte(MSG_ENTITYINFO,0)
+    writebyte(MSG_ENTIYINFO,0)
     writedouble(entityID,0);
     writedouble(ownerID,0);
     writebyte(controlled,0);

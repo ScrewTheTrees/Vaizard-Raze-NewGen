@@ -2,7 +2,6 @@ alarm[0] = 2;
 alarm[1] = 30;
 alarm[2] = 30;
 
-
 entityID = GetEntityID();
 
 ownerID = 0;
@@ -18,6 +17,12 @@ pressLeft = false;
 pressUp = false;
 pressDown = false;
 pressJump = false;
+
+ScrEntSetStats(10000,10000,10000);
+
+
+
+
 
 
 

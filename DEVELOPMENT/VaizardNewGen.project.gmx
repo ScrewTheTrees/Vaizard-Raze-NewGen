@@ -119,7 +119,9 @@
         <script>scripts\MsgSendPlayerinfo.gml</script>
         <script>scripts\MsgSendTestTCP.gml</script>
         <script>scripts\MsgSendTestUDP.gml</script>
+        <script>scripts\MsgSendEntitycreate.gml</script>
         <script>scripts\MsgSendEntityinfo.gml</script>
+        <script>scripts\MsgSendEntitymove.gml</script>
       </scripts>
       <scripts name="Recive">
         <script>scripts\MsgReciveDeadpacket.gml</script>
@@ -127,7 +129,9 @@
         <script>scripts\MsgRecivePlayerinfo.gml</script>
         <script>scripts\MsgReciveTestTCP.gml</script>
         <script>scripts\MsgReciveTestUDP.gml</script>
+        <script>scripts\MsgReciveEntitycreate.gml</script>
         <script>scripts\MsgReciveEntityinfo.gml</script>
+        <script>scripts\MsgReciveEntitymove.gml</script>
       </scripts>
       <script>scripts\ScrMessages.gml</script>
     </scripts>
@@ -135,6 +139,7 @@
       <script>scripts\ScrEntCreate.gml</script>
       <script>scripts\GetEntityID.gml</script>
       <script>scripts\GetEntityFromID.gml</script>
+      <script>scripts\ScrEntSetStats.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -155,7 +160,7 @@
     <constant name="MSG_TESTUDP">251</constant>
     <constant name="MSG_TESTTCP">250</constant>
     <constant name="MSG_ENTITYMOVE">12</constant>
-    <constant name="MSG_ENTIYINFO">11</constant>
+    <constant name="MSG_ENTITYINFO">11</constant>
     <constant name="MSG_ENTITYCREATE">10</constant>
     <constant name="MSG_PLAYERINFO">2</constant>
     <constant name="MSG_PLAYERID">1</constant>

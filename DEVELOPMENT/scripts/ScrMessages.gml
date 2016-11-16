@@ -7,5 +7,9 @@ var messageid=argument0;
     case MSG_PLAYERINFO:            MsgRecivePlayerinfo();      break;
     case MSG_TESTTCP:               MsgReciveTestTCP();         break;
     case MSG_TESTUDP:               MsgReciveTestUDP();         break;
+    
+    case MSG_ENTITYCREATE:          MsgReciveEntitycreate();    break;
+    case MSG_ENTITYINFO:            MsgReciveEntityinfo();      break;
+    case MSG_ENTITYMOVE:            MsgReciveEntitymove();      break;
   }
 clearbuffer(0);
