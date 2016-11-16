@@ -27,6 +27,11 @@ ScrEntSetStats(10000,10000,10000);
 
 
 //Not synced, fully client sided
+canCollideProjectile = false;
+
+
+
+
 for (var i = 0; i<=30; i++)
     {
     pressShoot[0] = false;

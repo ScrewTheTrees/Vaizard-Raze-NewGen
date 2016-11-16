@@ -1,12 +1,17 @@
 
-
-    i = instance_create(readdouble(0),readdouble(0),readint(0));
     
-    i.entityID = readdouble(0);
-    i.ownerID = readdouble(0);
+    var xx = readdouble(0);
+    var yy = readdouble(0);
+    var oid = readint(0);
+
+    i = instance_create(xx,yy,oid);
+    
+    i.entityID = readint(0);
+    i.ownerID = readint(0);
     i.controlled = readbyte(0);
     i.myroom = readint(0);
     i.facedir = readint(0);
+    
     
     
     

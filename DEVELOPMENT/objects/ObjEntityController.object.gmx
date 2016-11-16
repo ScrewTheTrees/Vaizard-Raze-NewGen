@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScrEntCreate();
+            <string>target = DUMMY;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="2">
+    <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,86 +48,45 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>MsgSendEntitymove();
+            <string>if !instance_exists(target) target = DUMMY;
 
-alarm[2] = 30;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>MsgSendEntityinfo();
+target.controlled = true;
+target.ownerID = global.playerID;
 
 
-alarm[1] = 240;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>MsgSendEntitycreate();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Reset if controlled
-
-if controlled = false
-    ownerID = 0; 
+if keyboard_check(global.keyBind[KEY.RIGHT]) target.pressRight = true
+    else target.pressRight = false;
     
-
+if keyboard_check(global.keyBind[KEY.LEFT]) target.pressLeft = true
+    else target.pressLeft = false;
+    
+if keyboard_check(global.keyBind[KEY.UP]) target.pressUp = true
+    else target.pressUp = false;
+    
+if keyboard_check(global.keyBind[KEY.DOWN]) target.pressDown = true
+    else target.pressDown = false;
+    
+    
+    
+    
+if keyboard_check_pressed(global.keyBind[KEY.RIGHT])
+|| keyboard_check_pressed(global.keyBind[KEY.LEFT])
+|| keyboard_check_pressed(global.keyBind[KEY.UP])
+|| keyboard_check_pressed(global.keyBind[KEY.DOWN])
+|| keyboard_check_pressed(global.keyBind[KEY.JUMP])
+|| keyboard_check_released(global.keyBind[KEY.RIGHT])
+|| keyboard_check_released(global.keyBind[KEY.LEFT])
+|| keyboard_check_released(global.keyBind[KEY.UP])
+|| keyboard_check_released(global.keyBind[KEY.DOWN])
+|| keyboard_check_released(global.keyBind[KEY.JUMP])
+target.alarm[2]=2;
+    
+    
+    
+    
+    
+    
+    
 </string>
           </argument>
         </arguments>

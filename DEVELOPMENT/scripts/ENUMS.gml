@@ -1,0 +1,13 @@
+enum KEY {
+RIGHT = 0,
+LEFT = 1,
+UP = 2,
+DOWN = 3,
+JUMP = 4,
+SHOOT1 = 5,
+SHOOT2 = 6,
+SHOOT3 = 7,
+SHOOT4 = 8,
+SHOOT5 = 9,
+SHOOT6 = 10
+}

@@ -3,7 +3,7 @@
 
 healthMax = argument0;
 manaMax = argument1;
-stamina_Max = argument2;
+staminaMax = argument2;
 
 healthCurrent = healthMax;
 manaCurrent = manaMax;

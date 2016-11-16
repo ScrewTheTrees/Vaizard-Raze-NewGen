@@ -39,7 +39,7 @@ i.playerPort = clientPort;
 i.playerSocket = client;
 i.playerIP = clientIp;
 
-//MsgSendPlayerId(playerId);
+MsgSendPlayerid(playerId);
 }
 </string>
           </argument>

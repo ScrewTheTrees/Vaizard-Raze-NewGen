@@ -7,8 +7,9 @@ if (IsOnline()==true && global.isHost==true)
     writedouble(y,0);
     writeint(object_index,0);
     
-    writedouble(entityID,0);
-    writedouble(ownerID,0);
+    
+    writeint(entityID,0);
+    writeint(ownerID,0);
     writebyte(controlled,0);
     writeint(myroom,0);
     writeint(facedir,0);

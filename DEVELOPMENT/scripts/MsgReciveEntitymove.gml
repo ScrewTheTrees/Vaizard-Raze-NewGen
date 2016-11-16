@@ -1,5 +1,5 @@
 
-    var entID = readdouble(0);
+    entID = readint(0);
     
     i = GetEntityFromID(entID);
     
@@ -9,10 +9,15 @@
     i.hspeed = readdouble(0);
     i.vspeed = readdouble(0);
     
+    i.pressRight = readbyte(0);
+    i.pressLeft = readbyte(0);
+    i.pressUp = readbyte(0);
+    i.pressDown = readbyte(0);
+    i.pressJump = readbyte(0);
     
     if global.isHost==true
         {
-        ScrSendClient(3,i.myroom,false);
+        ScrSendClient(3,i.myroom,true);
         }
     
     

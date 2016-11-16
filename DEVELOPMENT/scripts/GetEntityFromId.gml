@@ -1,15 +1,16 @@
 ///GetEntityFromID(EntityID)
 
-ret = DUMMY;
+global.ret = DUMMY;
+
 
 with (Entity)
     {
     if (entityID==argument0)
         {
-        ret = id;
+        global.ret = id;
         }
     }
 
     
     
-    return ret;
+    return global.ret;
