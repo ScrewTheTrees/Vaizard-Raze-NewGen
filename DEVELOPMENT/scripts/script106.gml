@@ -3,6 +3,3 @@ var ii = instance_create(argument0, argument1, argument2);
 ii.creatorID = argument3;
 ii.team = argument4;
 ii.facedir = argument5;
-
-
-return ii;

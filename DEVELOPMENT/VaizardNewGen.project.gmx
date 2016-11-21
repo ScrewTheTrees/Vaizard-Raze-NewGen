@@ -125,6 +125,7 @@
         <script>scripts\MsgSendEntitycreate.gml</script>
         <script>scripts\MsgSendEntityinfo.gml</script>
         <script>scripts\MsgSendEntitymove.gml</script>
+        <script>scripts\MsgSendProjectileCreate.gml</script>
       </scripts>
       <scripts name="Recive">
         <script>scripts\MsgReciveDeadpacket.gml</script>
@@ -135,6 +136,7 @@
         <script>scripts\MsgReciveEntitycreate.gml</script>
         <script>scripts\MsgReciveEntityinfo.gml</script>
         <script>scripts\MsgReciveEntitymove.gml</script>
+        <script>scripts\MsgReciveProjectileCreate.gml</script>
       </scripts>
       <script>scripts\ScrMessages.gml</script>
     </scripts>
@@ -148,6 +150,7 @@
       <script>scripts\GetTeamHostility.gml</script>
     </scripts>
     <script>scripts\SpawnProjectile.gml</script>
+    <script>scripts\SpawnEntity.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\GameController</object>
@@ -167,9 +170,11 @@
     <room>rooms\RoomStart</room>
     <room>rooms\Template</room>
   </rooms>
-  <constants number="8">
+  <constants number="10">
     <constant name="MSG_TESTUDP">251</constant>
     <constant name="MSG_TESTTCP">250</constant>
+    <constant name="MSG_PROJECTILECREATE">20</constant>
+    <constant name="MSG_ENTITYDESTROY">13</constant>
     <constant name="MSG_ENTITYMOVE">12</constant>
     <constant name="MSG_ENTITYINFO">11</constant>
     <constant name="MSG_ENTITYCREATE">10</constant>

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>creatorID = 0; //ID of the object creating this object,  0 is irrelevant
 
-
+facedir=1; 
 damage = 1;
 team = TEAM.NOONE;
 collided = COLLIDE.NOONE;
@@ -45,6 +45,32 @@ hitEnemy = true; //whenever can hit Entities considered "enemies"
 hitCreator = false; //Whenever the projectile can hit its creator
 
 hitProjectileEnemy = false;
+
+
+alarm[0]=2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>MsgSendProjectileCreate();
 </string>
           </argument>
         </arguments>
@@ -135,30 +161,30 @@ hitProjectileEnemy = false;
     {
         if (hitCreator==true)
         {
+            collided = COLLIDE.ENTITY;
             if (healCreator == true) ScrEntityTakeHeal(damage)
             else ScrEntityTakeDamage(damage,ignoreArmor)
             if (destroyOnHitEntity==true) instance_destroy();
-            collided = COLLIDE.ENTITY;
         }
     }
     else if (GetTeamHostility(team,other.team)==1) //if hostile
     {
         if (hitEnemy==true)
         {
+            collided = COLLIDE.ENTITY;
             if (healEnemy == true) ScrEntityTakeHeal(damage)
             else ScrEntityTakeDamage(damage,ignoreArmor)
             if (destroyOnHitEntity==true) instance_destroy();
-            collided = COLLIDE.ENTITY;
         }
     }
     else if (GetTeamHostility(team,other.team)==2) //if friendly
     {
         if (hitAlly==true)
         {
+            collided = COLLIDE.ENTITY;
             if (healAlly == true) ScrEntityTakeHeal(damage)
             else ScrEntityTakeDamage(damage,ignoreArmor)
             if (destroyOnHitEntity==true) instance_destroy();
-            collided = COLLIDE.ENTITY;
         }
     }
     

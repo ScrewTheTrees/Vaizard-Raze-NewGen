@@ -6,14 +6,16 @@
 
     i = instance_create(xx,yy,oid);
     
-    i.entityID = readint(0);
-    i.ownerID = readint(0);
-    i.controlled = readbyte(0);
+    i.creatorID = readint(0);
     i.myroom = readint(0);
     i.facedir = readint(0);
     i.team = readint(0);
+
+    i.hspeed = readdouble(0);
+    i.vspeed = readdouble(0);
     
+    if (global.isHost==true) ScrSendClient(3,i.myroom,false);
     
-    
-    
+    if(i.myroom!=room) with(i) {instance_destroy();}
+        
 clearbuffer(0);
