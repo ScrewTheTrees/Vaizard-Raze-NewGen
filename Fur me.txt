@@ -1,4 +1,4 @@
 Entity:
 	Alarm[0] = Create
-	Alarm[1] = Info
-	Alarm[2] = Move
+	Alarm[1] = Info sync
+	Alarm[2] = Move sync
