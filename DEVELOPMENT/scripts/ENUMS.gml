@@ -11,3 +11,23 @@ SHOOT4 = 8,
 SHOOT5 = 9,
 SHOOT6 = 10
 }
+
+enum SHOOT {
+NOONE = 0,
+PLAYER_BUSTER = 1,
+PLAYER_BUSTER_CHARGE = 2,
+
+LENGTH = 3 //Always be the highest number
+}
+
+enum TEAM {
+NOONE = 0,
+PLAYER = 1,
+ENEMY = 2,
+NPC = 3,
+RED = 4,
+GREEN = 5,
+BLUE = 6
+}
+
+

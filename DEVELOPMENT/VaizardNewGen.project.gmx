@@ -143,6 +143,7 @@
       <script>scripts\GetEntityID.gml</script>
       <script>scripts\GetEntityFromID.gml</script>
       <script>scripts\ScrEntSetStats.gml</script>
+      <script>scripts\ScrEntityTakeDamage.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -153,6 +154,7 @@
       <object>objects\ObjOnlineHandle</object>
     </objects>
     <object>objects\Entity</object>
+    <object>objects\Projectile</object>
     <object>objects\DUMMY</object>
     <object>objects\ObjEntityController</object>
     <object>objects\ObjEntityTest</object>

@@ -18,9 +18,10 @@ pressUp = false;
 pressDown = false;
 pressJump = false;
 
+team = TEAM.NOONE;
+
+
 ScrEntSetStats(10000,10000,10000);
-
-
 
 
 
@@ -30,10 +31,10 @@ ScrEntSetStats(10000,10000,10000);
 canCollideProjectile = false;
 
 
-
-
-for (var i = 0; i<=30; i++)
+for (var i = 0; i<SHOOT.LENGTH; i++)
     {
-    pressShoot[0] = false;
+    shootPress[0] = false;
+    shootKind[0] = 0;
+    shootCooldown[0] = 0;
     }
 
