@@ -2,7 +2,7 @@ alarm[0] = 2;
 alarm[1] = 30;
 alarm[2] = 30;
 
-entityID = GetEntityID();
+entityID = GetNewEntityID();
 
 ownerID = 0;
 controlled = false;
@@ -21,7 +21,7 @@ pressJump = false;
 team = TEAM.NOONE;
 
 
-ScrEntSetStats(10000,10000,10000);
+ScrEntSetStats(10000,10000,10000,0);
 
 
 

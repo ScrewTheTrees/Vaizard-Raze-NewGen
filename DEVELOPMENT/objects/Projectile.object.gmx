@@ -7,7 +7,168 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>creatorID = 0; //ID of the object creating this object,  0 is irrelevant
+
+
+damage = 1;
+team = TEAM.NOONE;
+collided = COLLIDE.NOONE;
+ignoreArmor = false;
+
+destroyOnHitSolid = true;
+destroyOnHitEntity = true;
+
+healAlly = false;
+healEnemy = false;
+healCreator = false;
+
+hitAlly = false; //whenever can hit Entities considered "Allies"
+hitEnemy = true; //whenever can hit Entities considered "enemies"
+hitCreator = false; //Whenever the projectile can hit its creator
+
+hitProjectileEnemy = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Solid">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (destroyOnHitSolid==true)
+{
+    collided = COLLIDE.SOLID;
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Projectile">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (hitProjectileEnemy == true)
+{
+    if (other.hitProjectileEnemy==true)
+    {
+        with (other)
+        {
+        collided = COLLIDE.PROJECTILE;
+        instance_destroy();   
+        }
+    }
+    collided = COLLIDE.PROJECTILE;
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Entity">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (other.canCollideProjectile==true)
+{
+    if (other.entityID == creatorID)
+    {
+        if (hitCreator==true)
+        {
+            if (healCreator == true) ScrEntityTakeHeal(damage)
+            else ScrEntityTakeDamage(damage,ignoreArmor)
+            if (destroyOnHitEntity==true) instance_destroy();
+            collided = COLLIDE.ENTITY;
+        }
+    }
+    else if (GetTeamHostility(team,other.team)==1) //if hostile
+    {
+        if (hitEnemy==true)
+        {
+            if (healEnemy == true) ScrEntityTakeHeal(damage)
+            else ScrEntityTakeDamage(damage,ignoreArmor)
+            if (destroyOnHitEntity==true) instance_destroy();
+            collided = COLLIDE.ENTITY;
+        }
+    }
+    else if (GetTeamHostility(team,other.team)==2) //if friendly
+    {
+        if (hitAlly==true)
+        {
+            if (healAlly == true) ScrEntityTakeHeal(damage)
+            else ScrEntityTakeDamage(damage,ignoreArmor)
+            if (destroyOnHitEntity==true) instance_destroy();
+            collided = COLLIDE.ENTITY;
+        }
+    }
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

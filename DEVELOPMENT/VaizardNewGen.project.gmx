@@ -140,11 +140,14 @@
     </scripts>
     <scripts name="Entities">
       <script>scripts\ScrEntCreate.gml</script>
-      <script>scripts\GetEntityID.gml</script>
+      <script>scripts\GetNewEntityID.gml</script>
       <script>scripts\GetEntityFromID.gml</script>
       <script>scripts\ScrEntSetStats.gml</script>
       <script>scripts\ScrEntityTakeDamage.gml</script>
+      <script>scripts\ScrEntityTakeHeal.gml</script>
+      <script>scripts\GetTeamHostility.gml</script>
     </scripts>
+    <script>scripts\SpawnProjectile.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\GameController</object>
@@ -155,6 +158,7 @@
     </objects>
     <object>objects\Entity</object>
     <object>objects\Projectile</object>
+    <object>objects\Solid</object>
     <object>objects\DUMMY</object>
     <object>objects\ObjEntityController</object>
     <object>objects\ObjEntityTest</object>

@@ -14,8 +14,8 @@ SHOOT6 = 10
 
 enum SHOOT {
 NOONE = 0,
-PLAYER_BUSTER = 1,
-PLAYER_BUSTER_CHARGE = 2,
+STANDARD_BUSTER = 1,
+STANDARD_BUSTER_CHARGE = 2,
 
 LENGTH = 3 //Always be the highest number
 }
@@ -27,7 +27,14 @@ ENEMY = 2,
 NPC = 3,
 RED = 4,
 GREEN = 5,
-BLUE = 6
+BLUE = 6,
+PVP = 7
 }
 
+enum COLLIDE {
+NOONE = 0,
+PROJECTILE = 1,
+ENTITY = 2,
+SOLID = 3
+}
 
