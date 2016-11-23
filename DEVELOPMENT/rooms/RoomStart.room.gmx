@@ -52,32 +52,6 @@
   </views>
   <instances>
     <instance objName="GameController" x="32" y="32" name="inst_47CA95A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="256" y="768" name="inst_3B17C072" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="384" y="768" name="inst_DE8DBB6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="512" y="768" name="inst_DF883662" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidRoof" x="640" y="768" name="inst_4A45D4ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidRoof" x="768" y="768" name="inst_D715CE74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidRoof" x="896" y="768" name="inst_F83AC61C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidFloor" x="1024" y="768" name="inst_9A8A0598" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidFloor" x="1152" y="768" name="inst_2DC2B1E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidFloor" x="1280" y="768" name="inst_35974911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidStairLeft" x="128" y="640" name="inst_6F71EA0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidStairLeft" x="0" y="512" name="inst_D9FBA2F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidStairRight" x="1408" y="640" name="inst_8FA2D8B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidStairRight" x="1536" y="512" name="inst_BBDDE300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="1664" y="384" name="inst_8E38D5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidRoof" x="1664" y="256" name="inst_1EBC8A0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidFloor" x="1664" y="128" name="inst_D0B6CAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="1024" y="256" name="inst_257451FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="896" y="256" name="inst_645E4B81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="1024" y="128" name="inst_186A2FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="896" y="128" name="inst_2DF28030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="768" y="256" name="inst_1BA4389A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="768" y="128" name="inst_23A34A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="768" y="0" name="inst_172438BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="896" y="0" name="inst_1A229101" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="1024" y="0" name="inst_4484EFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ObjSolidBlock" x="1664" y="0" name="inst_451E55F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

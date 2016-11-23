@@ -211,7 +211,7 @@ y=round(y);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if sprite_index&gt;=0
+            <string>if sprite_index&gt;=0 &amp;&amp; myroom==room
     draw_self();
 
 

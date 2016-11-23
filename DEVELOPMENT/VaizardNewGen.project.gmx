@@ -38,6 +38,11 @@
   <scripts name="scripts">
     <script>scripts\ScrGameInit.gml</script>
     <script>scripts\ENUMS.gml</script>
+    <scripts name="UtilityMovement">
+      <script>scripts\slide_to_point.gml</script>
+      <script>scripts\rotate_to_point_hard.gml</script>
+      <script>scripts\rotate_to_point_smooth.gml</script>
+    </scripts>
     <scripts name="Online">
       <scripts name="39DLL">
         <script>scripts\dllinit.gml</script>
@@ -160,6 +165,10 @@
       <script>scripts\IsOwner.gml</script>
       <script>scripts\ScrEntityPlatformerMoveset.gml</script>
     </scripts>
+    <scripts name="Camera">
+      <script>scripts\CameraFreecam.gml</script>
+      <script>scripts\CameraEntitycam.gml</script>
+    </scripts>
     <script>scripts\SpawnProjectile.gml</script>
     <script>scripts\SpawnEntity.gml</script>
   </scripts>
@@ -187,6 +196,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomStart</room>
+    <room>rooms\RoomTest1s</room>
     <room>rooms\Template</room>
   </rooms>
   <constants number="10">

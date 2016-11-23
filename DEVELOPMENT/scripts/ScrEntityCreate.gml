@@ -10,11 +10,11 @@ controlled = false;
 myroom = room;
 facedir = 1;
 moveSpeed = 4;
-jumpSpeed = 10;
+jumpSpeed = 12;
 jumpSpeedWall = 6;
 jumpSpeedWallUp = 8;
 gravity = 0;
-setGrav = 0.3;
+setGrav = 0.4;
 
 moveType = MOVETYPE.NOONE;
 
