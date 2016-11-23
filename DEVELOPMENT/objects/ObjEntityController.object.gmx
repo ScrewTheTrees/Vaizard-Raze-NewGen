@@ -81,6 +81,11 @@ maximum_width=((room_height/room_width)*room_width);
             <kind>1</kind>
             <string>///Control entity
 if !instance_exists(target) target = DUMMY;
+if keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("D"))
+    {
+    target.controlled=false;
+    target = DUMMY;
+    }
 
 target.controlled = true;
 target.ownerID = global.playerID;
@@ -151,6 +156,9 @@ else if (spectate==true)
     CameraEntitycam(spectateTarget);
     
 else CameraEntitycam(target);
+
+
+
 </string>
           </argument>
         </arguments>

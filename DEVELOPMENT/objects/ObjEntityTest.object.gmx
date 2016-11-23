@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>Entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -90,7 +90,6 @@ if controlled==false
 {
 
 ObjEntityController.target.controlled=false;
-
 ObjEntityController.target=id;
 
 controlled=true;

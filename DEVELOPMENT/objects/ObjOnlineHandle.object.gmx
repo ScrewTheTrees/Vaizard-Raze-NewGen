@@ -217,7 +217,13 @@ repeat (500)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[1]=2;
+            <string>///Request Room entities
+
+MsgSendRequestRoom();
+
+
+
+alarm[1]=2;
 </string>
           </argument>
         </arguments>
