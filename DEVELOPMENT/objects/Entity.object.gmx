@@ -133,7 +133,6 @@ for (var i = 0; i &lt; 6; i++)
     if shootCooldown[i] &gt; 0
         shootCooldown[i] -= 1;
     }
-        
 </string>
           </argument>
         </arguments>

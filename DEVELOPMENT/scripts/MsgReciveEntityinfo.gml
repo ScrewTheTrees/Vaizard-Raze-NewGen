@@ -6,6 +6,7 @@
     i.controlled = readbyte(0);
     i.myroom = readint(0);
     i.facedir = readint(0);
+    i.moveType = readint(0);
     
     
     

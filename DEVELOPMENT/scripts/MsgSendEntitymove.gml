@@ -7,8 +7,10 @@ if (IsOnline()==true && ownerID=global.playerID)
     writeint(facedir,0);
     writedouble(x,0);
     writedouble(y,0);
-    writedouble(hspeed,0);
-    writedouble(vspeed,0);
+    writefloat(hspeed,0);
+    writefloat(vspeed,0);
+    writefloat(gravity,0);
+    writefloat(moveSpeed,0);
     
     writebyte(pressRight,0);
     writebyte(pressLeft,0);

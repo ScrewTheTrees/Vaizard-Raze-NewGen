@@ -8,6 +8,7 @@ if (IsOnline()==true && ownerID=global.playerID)
     writebyte(controlled,0);
     writeint(myroom,0);
     writeint(facedir,0);
+    writeint(moveType,0);
     
     if global.isHost==false ScrSendServer(false);
     else ScrSendClient(0,0,false);

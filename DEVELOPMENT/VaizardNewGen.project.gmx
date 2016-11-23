@@ -27,6 +27,11 @@
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\SprSolidRoof</sprite>
+    <sprite>sprites\SprSolidFloor</sprite>
+    <sprite>sprites\SprSolidBlock</sprite>
+    <sprite>sprites\SprSolidStairRight</sprite>
+    <sprite>sprites\SprSolidStairLeft</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -116,6 +121,7 @@
         <script>scripts\ScrSendClient.gml</script>
         <script>scripts\ScrNextPlayerid.gml</script>
         <script>scripts\IsOnline.gml</script>
+        <script>scripts\IsHost.gml</script>
       </scripts>
       <scripts name="Send">
         <script>scripts\MsgSendDeadpacket.gml</script>
@@ -150,6 +156,8 @@
       <script>scripts\ScrEntityTakeDamage.gml</script>
       <script>scripts\ScrEntityTakeHeal.gml</script>
       <script>scripts\GetTeamHostility.gml</script>
+      <script>scripts\ScrEntityResetInput.gml</script>
+      <script>scripts\IsOwner.gml</script>
     </scripts>
     <script>scripts\SpawnProjectile.gml</script>
     <script>scripts\SpawnEntity.gml</script>
@@ -164,6 +172,13 @@
     <object>objects\Entity</object>
     <object>objects\Projectile</object>
     <object>objects\Solid</object>
+    <objects name="Solids">
+      <object>objects\ObjSolidBlock</object>
+      <object>objects\ObjSolidRoof</object>
+      <object>objects\ObjSolidFloor</object>
+      <object>objects\ObjSolidStairRight</object>
+      <object>objects\ObjSolidStairLeft</object>
+    </objects>
     <object>objects\DUMMY</object>
     <object>objects\ObjEntityController</object>
     <object>objects\ObjEntityTest</object>

@@ -38,11 +38,9 @@ if (shootPress[0] = true &amp;&amp; shootCooldown[0] = 0)
     ii=SpawnProjectile(x,y,ObjProjectileTest,entityID,TEAM.PLAYER,facedir);
     ii.hspeed = facedir*4;
     shootCooldown[0] = 120;
-    shootPress[0] = false;
 }
 
-
-
+if (IsOwner()) ScrEntityResetInput();
 </string>
           </argument>
         </arguments>

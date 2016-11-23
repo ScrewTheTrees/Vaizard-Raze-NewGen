@@ -6,8 +6,10 @@
     i.facedir = readint(0);
     i.x = readdouble(0);
     i.y = readdouble(0);
-    i.hspeed = readdouble(0);
-    i.vspeed = readdouble(0);
+    i.hspeed = readfloat(0);
+    i.vspeed = readfloat(0);
+    i.gravity = readfloat(0);
+    i.moveSpeed = readfloat(0);
     
     i.pressRight = readbyte(0);
     i.pressLeft = readbyte(0);

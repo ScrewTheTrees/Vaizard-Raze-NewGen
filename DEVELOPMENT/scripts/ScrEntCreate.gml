@@ -9,7 +9,11 @@ controlled = false;
 
 myroom = room;
 facedir = 1;
-movespeed = 1;
+moveSpeed = 1;
+jumpSpeed = 8;
+gravity = 0;
+
+moveType = MOVETYPE.NOONE;
 
 
 pressRight = false;
@@ -31,7 +35,7 @@ ScrEntSetStats(10000,10000,10000,0);
 canCollideProjectile = false;
 
 
-for (var i = 0; i < 6; i++)
+for (var i = 0; i < global.shootKeys; i++)
     {
     shootPress[i] = false;
     shootKind[i] = 0;

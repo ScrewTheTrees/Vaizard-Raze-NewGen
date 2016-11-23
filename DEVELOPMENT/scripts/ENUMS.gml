@@ -11,6 +11,8 @@ SHOOT4 = 8,
 SHOOT5 = 9,
 SHOOT6 = 10
 }
+global.shootKeys = 6;
+
 
 enum SHOOT {
 NOONE = 0,
@@ -36,5 +38,11 @@ NOONE = 0,
 PROJECTILE = 1,
 ENTITY = 2,
 SOLID = 3
+}
+
+enum MOVETYPE {
+NOONE = 0,
+PLATFORMER = 1,
+FLIER = 2
 }
 
