@@ -81,10 +81,12 @@ maximum_width=((room_height/room_width)*room_width);
             <kind>1</kind>
             <string>///Control entity
 if !instance_exists(target) target = DUMMY;
+
 if keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("D"))
     {
     target.controlled=false;
     target = DUMMY;
+    spectate=false;
     }
 
 target.controlled = true;
@@ -150,10 +152,13 @@ if keyboard_check(global.keyBind[KEY.SHOOT6]) target.shootPress[5] = true;
           <argument>
             <kind>1</kind>
             <string>///Control Camera
-if (target==DUMMY)
+if (target==DUMMY &amp;&amp; !spectate)
     CameraFreecam(target);
+    
 else if (spectate==true)
+    {
     CameraEntitycam(spectateTarget);
+    }
     
 else CameraEntitycam(target);
 

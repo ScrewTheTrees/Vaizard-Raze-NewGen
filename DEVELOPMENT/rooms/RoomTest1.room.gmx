@@ -159,6 +159,7 @@
     <instance objName="Exit" x="2592" y="2400" name="inst_5ED9A305" locked="0" code="ScrExitSetVars(RoomTest2,&quot;test&quot;,1);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Entrance0" x="864" y="288" name="inst_6971B07F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Entrance1" x="768" y="1344" name="inst_1B52C5D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EfxFadeFromBlack" x="96" y="0" name="inst_EC8FFF66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

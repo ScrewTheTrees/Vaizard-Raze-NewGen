@@ -216,6 +216,7 @@
     <object>objects\Entrance3</object>
     <object>objects\Exit</object>
     <object>objects\NextRoom</object>
+    <object>objects\EfxFadeFromBlack</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomStart</room>

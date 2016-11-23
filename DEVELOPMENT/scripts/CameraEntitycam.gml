@@ -1,23 +1,22 @@
 ///CameraEntitycam(Object)
-//Script for the dimensional movement camera that can be user controlled (when dead or similar)
+//Script for the dimensional movement camera
 
-var look_up,look_down;
-var target=argument0;
+var look;
+var tempTarget=argument0;
 
-look_up=0;
-look_down=0
+look=0;
 
-if keyboard_check(target.pressUp)
-look_up=-300
+if (tempTarget.pressUp)
+look=-300
 
-if keyboard_check(target.pressDown)
-look_down=300
+if (tempTarget.pressDown)
+look=300
 
 
-if instance_exists(target)
+if instance_exists(tempTarget)
 {
-if target.facedir=1 slide_to_point(target.x+300 ,target.y+look_up+look_down ,20)
-else slide_to_point(target.x-300 ,target.y+look_up+look_down ,20)
+if tempTarget.facedir=1 slide_to_point(tempTarget.x+300 ,tempTarget.y+look ,20)
+else slide_to_point(tempTarget.x-300 ,tempTarget.y+look ,20)
 }
 
 

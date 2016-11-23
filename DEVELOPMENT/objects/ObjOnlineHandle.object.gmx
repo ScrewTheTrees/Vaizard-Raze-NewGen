@@ -219,7 +219,7 @@ repeat (500)
             <kind>1</kind>
             <string>///Request Room entities
 
-MsgSendRequestRoom();
+if (IsHost()==false) MsgSendRequestRoom();
 
 
 
