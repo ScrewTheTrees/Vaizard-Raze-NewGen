@@ -65,6 +65,19 @@
     <instance objName="ObjSolidStairLeft" x="0" y="512" name="inst_D9FBA2F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSolidStairRight" x="1408" y="640" name="inst_8FA2D8B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ObjSolidStairRight" x="1536" y="512" name="inst_BBDDE300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="1664" y="384" name="inst_8E38D5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidRoof" x="1664" y="256" name="inst_1EBC8A0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidFloor" x="1664" y="128" name="inst_D0B6CAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="1024" y="256" name="inst_257451FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="896" y="256" name="inst_645E4B81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="1024" y="128" name="inst_186A2FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="896" y="128" name="inst_2DF28030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="768" y="256" name="inst_1BA4389A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="768" y="128" name="inst_23A34A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="768" y="0" name="inst_172438BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="896" y="0" name="inst_1A229101" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="1024" y="0" name="inst_4484EFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ObjSolidBlock" x="1664" y="0" name="inst_451E55F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

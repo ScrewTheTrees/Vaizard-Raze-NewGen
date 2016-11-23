@@ -4,10 +4,35 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>Entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+
+moveType = MOVETYPE.PLATFORMER;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -28,10 +53,6 @@
             <string>event_inherited();
 
 
-if pressRight == true x+=2;
-if pressLeft == true x-=2;
-if pressDown == true y+=2;
-if pressUp == true y-=2;
 
 if (shootPress[0] = true &amp;&amp; shootCooldown[0] = 0)
 {
@@ -63,7 +84,9 @@ if (IsOwner()) ScrEntityResetInput();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if controlled==false
+            <string>event_inherited();
+
+if controlled==false
 {
 
 ObjEntityController.target.controlled=false;
@@ -76,34 +99,6 @@ ownerID = global.playerID;
 
 MsgSendEntityinfo();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self();
-
-
-draw_text(x,y-96,ownerID);
-draw_text(x,y-64,controlled);
-draw_text(x,y-32,entityID);
 </string>
           </argument>
         </arguments>

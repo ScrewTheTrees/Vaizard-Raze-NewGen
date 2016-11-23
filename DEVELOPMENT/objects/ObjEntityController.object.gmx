@@ -54,17 +54,15 @@ target.controlled = true;
 target.ownerID = global.playerID;
 
 
-if keyboard_check(global.keyBind[KEY.RIGHT]) target.pressRight = true
-    else target.pressRight = false;
+if keyboard_check(global.keyBind[KEY.RIGHT]) target.pressRight = true;
+if keyboard_check(global.keyBind[KEY.LEFT]) target.pressLeft = true;
+if keyboard_check(global.keyBind[KEY.UP]) target.pressUp = true;
+if keyboard_check(global.keyBind[KEY.DOWN]) target.pressDown = true;
+if keyboard_check(global.keyBind[KEY.JUMP]) target.pressJump = true;
+
+if keyboard_check_pressed(global.keyBind[KEY.JUMP]) target.pressedJump = true;
+
     
-if keyboard_check(global.keyBind[KEY.LEFT]) target.pressLeft = true
-    else target.pressLeft = false;
-    
-if keyboard_check(global.keyBind[KEY.UP]) target.pressUp = true
-    else target.pressUp = false;
-    
-if keyboard_check(global.keyBind[KEY.DOWN]) target.pressDown = true
-    else target.pressDown = false;
     
     
     
@@ -82,12 +80,12 @@ if keyboard_check_pressed(global.keyBind[KEY.RIGHT])
 target.alarm[2]=2;
     
 
-if keyboard_check(global.keyBind[KEY.SHOOT1]) target.shootPress[0] =true;   
-if keyboard_check(global.keyBind[KEY.SHOOT2]) target.shootPress[1] =true;   
-if keyboard_check(global.keyBind[KEY.SHOOT3]) target.shootPress[2] =true;   
-if keyboard_check(global.keyBind[KEY.SHOOT4]) target.shootPress[3] =true;   
-if keyboard_check(global.keyBind[KEY.SHOOT5]) target.shootPress[4] =true;     
-if keyboard_check(global.keyBind[KEY.SHOOT6]) target.shootPress[5] =true;    
+if keyboard_check(global.keyBind[KEY.SHOOT1]) target.shootPress[0] = true;   
+if keyboard_check(global.keyBind[KEY.SHOOT2]) target.shootPress[1] = true;   
+if keyboard_check(global.keyBind[KEY.SHOOT3]) target.shootPress[2] = true;   
+if keyboard_check(global.keyBind[KEY.SHOOT4]) target.shootPress[3] = true;   
+if keyboard_check(global.keyBind[KEY.SHOOT5]) target.shootPress[4] = true;     
+if keyboard_check(global.keyBind[KEY.SHOOT6]) target.shootPress[5] = true;    
     
     
     

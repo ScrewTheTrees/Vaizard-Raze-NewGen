@@ -59,7 +59,7 @@ if keyboard_check_pressed(ord("J")) ScrClientJoin("127.0.0.1");
 if keyboard_check_pressed(ord("A")) MsgSendTestTCP();
 if keyboard_check_pressed(ord("S")) MsgSendTestUDP();
 
-if keyboard_check_pressed(ord("M")) instance_create(500,500,ObjEntityTest);
+if keyboard_check_pressed(ord("M")) &amp;&amp; IsHost() instance_create(500,500,ObjEntityTest);
 
 </string>
           </argument>
