@@ -32,6 +32,17 @@ if pressRight == true x+=2;
 if pressLeft == true x-=2;
 if pressDown == true y+=2;
 if pressUp == true y-=2;
+
+if (shootPress[0] = true &amp;&amp; shootCooldown[0] = 0)
+{
+    ii=SpawnProjectile(x,y,ObjProjectileTest,entityID,TEAM.PLAYER,facedir);
+    ii.hspeed = facedir*4;
+    shootCooldown[0] = 120;
+    shootPress[0] = false;
+}
+
+
+
 </string>
           </argument>
         </arguments>

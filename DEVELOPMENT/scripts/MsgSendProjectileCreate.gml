@@ -16,7 +16,7 @@ if (IsOnline()==true)
     writedouble(hspeed,0);
     writedouble(vspeed,0);
     
-    if (global.isHost==true) ScrSendClient(3,room,false);
+    if (global.isHost==true) ScrSendClient(0,room,false);
     else ScrSendServer(false);
     
     clearbuffer(0);

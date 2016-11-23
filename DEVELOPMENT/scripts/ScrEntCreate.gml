@@ -31,10 +31,10 @@ ScrEntSetStats(10000,10000,10000,0);
 canCollideProjectile = false;
 
 
-for (var i = 0; i<SHOOT.LENGTH; i++)
+for (var i = 0; i < 6; i++)
     {
-    shootPress[0] = false;
-    shootKind[0] = 0;
-    shootCooldown[0] = 0;
+    shootPress[i] = false;
+    shootKind[i] = 0;
+    shootCooldown[i] = 0;
     }
 

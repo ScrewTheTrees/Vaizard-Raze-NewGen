@@ -81,8 +81,13 @@ if keyboard_check_pressed(global.keyBind[KEY.RIGHT])
 || keyboard_check_released(global.keyBind[KEY.JUMP])
 target.alarm[2]=2;
     
-    
-    
+
+if keyboard_check(global.keyBind[KEY.SHOOT1]) target.shootPress[0] =true;   
+if keyboard_check(global.keyBind[KEY.SHOOT2]) target.shootPress[1] =true;   
+if keyboard_check(global.keyBind[KEY.SHOOT3]) target.shootPress[2] =true;   
+if keyboard_check(global.keyBind[KEY.SHOOT4]) target.shootPress[3] =true;   
+if keyboard_check(global.keyBind[KEY.SHOOT5]) target.shootPress[4] =true;     
+if keyboard_check(global.keyBind[KEY.SHOOT6]) target.shootPress[5] =true;    
     
     
     

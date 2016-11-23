@@ -40,6 +40,10 @@ i.playerSocket = client;
 i.playerIP = clientIp;
 
 MsgSendPlayerid(playerId);
+
+global.tempID = playerId;
+
+with (Entity) { MsgSendEntitycreatePlayer(global.tempID); }
 }
 </string>
           </argument>

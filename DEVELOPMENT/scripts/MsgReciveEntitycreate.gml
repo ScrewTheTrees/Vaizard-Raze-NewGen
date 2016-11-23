@@ -14,6 +14,10 @@
     i.team = readint(0);
     
     
+    //Extra layer of failsafe, incase sync is a bit out of sync :)
+    if (i.myroom != room && i.persistent==false)
+        with (i) { instance_destroy(); }
+    
     
     
 clearbuffer(0);

@@ -26,6 +26,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -123,6 +124,7 @@
         <script>scripts\MsgSendTestTCP.gml</script>
         <script>scripts\MsgSendTestUDP.gml</script>
         <script>scripts\MsgSendEntitycreate.gml</script>
+        <script>scripts\MsgSendEntitycreatePlayer.gml</script>
         <script>scripts\MsgSendEntityinfo.gml</script>
         <script>scripts\MsgSendEntitymove.gml</script>
         <script>scripts\MsgSendProjectileCreate.gml</script>
@@ -165,6 +167,7 @@
     <object>objects\DUMMY</object>
     <object>objects\ObjEntityController</object>
     <object>objects\ObjEntityTest</object>
+    <object>objects\ObjProjectileTest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomStart</room>

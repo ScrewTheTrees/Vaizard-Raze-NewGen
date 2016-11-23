@@ -30,6 +30,7 @@
 facedir=1; 
 damage = 1;
 team = TEAM.NOONE;
+myroom = room;
 collided = COLLIDE.NOONE;
 ignoreArmor = false;
 

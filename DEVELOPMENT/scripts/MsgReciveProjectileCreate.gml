@@ -14,7 +14,9 @@
     i.hspeed = readdouble(0);
     i.vspeed = readdouble(0);
     
-    if (global.isHost==true) ScrSendClient(3,i.myroom,false);
+    if (global.isHost==true) ScrSendClient(2,playerID,false);
+    
+    i.alarm[0] = -1; //Do not send this shit back to the host/sender
     
     if(i.myroom!=room) with(i) {instance_destroy();}
         
