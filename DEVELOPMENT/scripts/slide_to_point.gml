@@ -1,4 +1,4 @@
-﻿//slide_to_point(x,y,divided speed)
+//slide_to_point(x,y,divided speed)
 //The lower argument2 is the faster it goes
 
 

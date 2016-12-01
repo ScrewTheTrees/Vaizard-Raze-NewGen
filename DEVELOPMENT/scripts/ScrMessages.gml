@@ -6,6 +6,8 @@ var messageid=argument0;
     case MSG_PLAYERID:              MsgRecivePlayerid();                    break;
     case MSG_PLAYERINFO:            MsgRecivePlayerinfo();                  break;
     case MSG_REQUESTROOM:           MsgReciveRequestRoom();                 break;
+    case MSG_PLAYERINFOREQUEST:     MsgRecivePlayerInfoRequest();           break;
+    case MSG_ROOM_GOTOROOM:         MsgReciveRoomGotoRoom();                break;
     
     case MSG_TESTTCP:               MsgReciveTestTCP();                     break;
     case MSG_TESTUDP:               MsgReciveTestUDP();                     break;
@@ -15,5 +17,8 @@ var messageid=argument0;
     case MSG_ENTITYMOVE:            MsgReciveEntitymove();                  break;
     
     case MSG_PROJECTILECREATE:      MsgReciveProjectileCreate();            break;
+    
+    case MSG_MAPSEND:               MsgReciveMap();                         break;
+
   }
 clearbuffer(0);

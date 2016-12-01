@@ -156,7 +156,7 @@ alarm[0]=2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (other.canCollideProjectile==true)
+            <string>if (other.canCollideProjectile==true &amp;&amp; other.myroom==myroom)
 {
     if (other.entityID == creatorID)
     {

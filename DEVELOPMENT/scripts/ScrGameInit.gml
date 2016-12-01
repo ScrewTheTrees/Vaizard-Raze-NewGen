@@ -5,6 +5,7 @@ ScrOnlineInit();
 
 global.eid = 0;
 global.entranceID = 0;
+global.debugdraw=false;
 
 global.keyBind[KEY.RIGHT] = vk_right;
 global.keyBind[KEY.LEFT] = vk_left;

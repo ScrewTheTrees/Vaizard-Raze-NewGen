@@ -141,6 +141,8 @@
         <script>scripts\MsgSendPlayerid.gml</script>
         <script>scripts\MsgSendPlayerinfo.gml</script>
         <script>scripts\MsgSendRequestRoom.gml</script>
+        <script>scripts\MsgSendPlayerInfoRequest.gml</script>
+        <script>scripts\MsgSendRoomGotoRoom.gml</script>
         <script>scripts\MsgSendTestTCP.gml</script>
         <script>scripts\MsgSendTestUDP.gml</script>
         <script>scripts\MsgSendEntitycreate.gml</script>
@@ -148,18 +150,22 @@
         <script>scripts\MsgSendEntityinfo.gml</script>
         <script>scripts\MsgSendEntitymove.gml</script>
         <script>scripts\MsgSendProjectileCreate.gml</script>
+        <script>scripts\MsgSendMap.gml</script>
       </scripts>
       <scripts name="Recive">
         <script>scripts\MsgReciveDeadpacket.gml</script>
         <script>scripts\MsgRecivePlayerid.gml</script>
         <script>scripts\MsgRecivePlayerinfo.gml</script>
         <script>scripts\MsgReciveRequestRoom.gml</script>
+        <script>scripts\MsgRecivePlayerInfoRequest.gml</script>
+        <script>scripts\MsgReciveRoomGotoRoom.gml</script>
         <script>scripts\MsgReciveTestTCP.gml</script>
         <script>scripts\MsgReciveTestUDP.gml</script>
         <script>scripts\MsgReciveEntitycreate.gml</script>
         <script>scripts\MsgReciveEntityinfo.gml</script>
         <script>scripts\MsgReciveEntitymove.gml</script>
         <script>scripts\MsgReciveProjectileCreate.gml</script>
+        <script>scripts\MsgReciveMap.gml</script>
       </scripts>
       <script>scripts\ScrMessages.gml</script>
     </scripts>
@@ -174,6 +180,8 @@
       <script>scripts\ScrEntityResetInput.gml</script>
       <script>scripts\IsOwner.gml</script>
       <script>scripts\ScrEntityPlatformerMoveset.gml</script>
+      <script>scripts\ScrEntityFreeze.gml</script>
+      <script>scripts\ScrEntityOwnedToEntrance.gml</script>
     </scripts>
     <scripts name="Camera">
       <script>scripts\CameraFreecam.gml</script>
@@ -184,6 +192,41 @@
     <script>scripts\DrawTextCenter.gml</script>
     <script>scripts\ScrChangeRoom.gml</script>
     <script>scripts\ScrExitSetVars.gml</script>
+    <scripts name="Generator">
+      <script>scripts\scr_generator_init.gml</script>
+      <scripts name="Mod Ceiling">
+        <script>scripts\scr_type1_ceiling_module_flat.gml</script>
+        <script>scripts\scr_type1_ceiling_module_empty.gml</script>
+      </scripts>
+      <scripts name="Mod Ground">
+        <script>scripts\scr_type1_ground_module_flat.gml</script>
+        <script>scripts\scr_type1_ground_module_empty.gml</script>
+        <script>scripts\scr_type1_ground_module_stair.gml</script>
+      </scripts>
+      <script>scripts\scr_type1_generate_ceiling.gml</script>
+      <script>scripts\scr_type1_generate_ground.gml</script>
+      <script>scripts\scr_type1_generate_hplatforms.gml</script>
+      <script>scripts\scr_type1_generate_vplatforms.gml</script>
+      <script>scripts\scr_generate_tweakblocks.gml</script>
+      <script>scripts\scr_generate_entrance.gml</script>
+      <script>scripts\scr_generate_exit.gml</script>
+      <script>scripts\scr_place_ceiling_block.gml</script>
+      <script>scripts\scr_place_ground_block.gml</script>
+      <script>scripts\scr_place_solid_block.gml</script>
+      <script>scripts\scr_place_solid_slope_r.gml</script>
+      <script>scripts\scr_place_solid_slope_l.gml</script>
+      <script>scripts\scr_place_solid_sidewall.gml</script>
+      <scripts name="Debug/Functions">
+        <script>scripts\scr_debug_generator_init.gml</script>
+        <script>scripts\scr_debug_generator_add.gml</script>
+        <script>scripts\scr_debug_generator_draw.gml</script>
+        <script>scripts\scr_debuggrid_create.gml</script>
+        <script>scripts\scr_debuggrid_destroy.gml</script>
+        <script>scripts\scr_debuggrid_path_possible.gml</script>
+        <script>scripts\scr_platform_possible.gml</script>
+      </scripts>
+      <script>scripts\scr_generator_type1_case.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font12A</font>
@@ -214,24 +257,32 @@
     <object>objects\Entrance1</object>
     <object>objects\Entrance2</object>
     <object>objects\Entrance3</object>
+    <object>objects\EntranceStage</object>
     <object>objects\Exit</object>
+    <object>objects\ExitStage</object>
     <object>objects\NextRoom</object>
     <object>objects\EfxFadeFromBlack</object>
+    <object>objects\ObjMapGeneratorType1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RoomStart</room>
     <room>rooms\RoomTest1</room>
     <room>rooms\RoomTest2</room>
     <room>rooms\Template</room>
+    <room>rooms\RoomMissionType1s</room>
   </rooms>
-  <constants number="11">
+  <constants number="15">
     <constant name="MSG_TESTUDP">251</constant>
     <constant name="MSG_TESTTCP">250</constant>
+    <constant name="MSG_MAPSEND">30</constant>
     <constant name="MSG_PROJECTILECREATE">20</constant>
     <constant name="MSG_ENTITYDESTROY">13</constant>
     <constant name="MSG_ENTITYMOVE">12</constant>
     <constant name="MSG_ENTITYINFO">11</constant>
     <constant name="MSG_ENTITYCREATE">10</constant>
+    <constant name="MSG_ROOM_GOTOROOM">6</constant>
+    <constant name="MSG_MISSION_NEXTROOM">5</constant>
+    <constant name="MSG_PLAYERINFOREQUEST">4</constant>
     <constant name="MSG_REQUESTROOM">3</constant>
     <constant name="MSG_PLAYERINFO">2</constant>
     <constant name="MSG_PLAYERID">1</constant>

@@ -1,4 +1,4 @@
-﻿//Usage:
+//Usage:
 //rotate_to_point_smooth(x, y, minSpeed, maxSpeed, steps)
 //Made bah attacka
 

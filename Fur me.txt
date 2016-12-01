@@ -2,7 +2,10 @@ Entity:
 	Alarm[0] = Create sync
 	Alarm[1] = Info sync
 	Alarm[2] = Move sync
+	Alarm[3] = Before Create Sync
+	Alarm[4] = AI fire Tick
 	
 	
 Projectile
-	Alarm[0] = Create sync
+	Alarm[0] = Create sync 
+	Alarm[3] = Before Create Sync

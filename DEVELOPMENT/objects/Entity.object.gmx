@@ -164,35 +164,6 @@ for (var i = 0; i &lt; 6; i++)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Exit">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if IsOwner()==true
-{
-    with (other)
-    {
-        ScrChangeRoom(0,nroom,mytext,entranceID);
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="Solid">
       <action>
         <libid>1</libid>
@@ -240,24 +211,7 @@ y=round(y);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (IsOwner())
-    {
-        global.warpTarget = DUMMY;
-        
-            with (Entrance0)
-            {
-                if entranceID = global.entranceID
-                    global.warpTarget = id;
-            }
-        if global.warpTarget != DUMMY
-            {
-            x=global.warpTarget.x;
-            y=global.warpTarget.y;
-            }
-            
-    alarm[1]=2;
-    }
-
+            <string>ScrEntityOwnedToEntrance();
 </string>
           </argument>
         </arguments>

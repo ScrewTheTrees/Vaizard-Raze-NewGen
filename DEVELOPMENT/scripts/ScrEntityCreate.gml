@@ -1,6 +1,7 @@
 alarm[0] = 2;
 alarm[1] = 30;
 alarm[2] = 30;
+alarm[4] = 420;
 
 entityID = GetNewEntityID();
 
@@ -9,10 +10,10 @@ controlled = false;
 
 myroom = room;
 facedir = 1;
-moveSpeed = 4;
-jumpSpeed = 12;
-jumpSpeedWall = 6;
-jumpSpeedWallUp = 8;
+moveSpeed = 5;
+jumpSpeed = 14;
+jumpSpeedWall = 8;
+jumpSpeedWallUp = 10;
 gravity = 0;
 setGrav = 0.4;
 

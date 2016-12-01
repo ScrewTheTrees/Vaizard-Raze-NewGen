@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,18 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>playerID = 0;
-
-playerPort = 0;
-playerSocket = 0;
-playerIP = "";
-
-playerRoom = room;
-
-
-inMission = true;
-readyToGetMap = false;
-hasMap = false;
+            <string>///is also parent
+scr_generator_init();
+scr_debug_generator_init();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_debuggrid_destroy();
 </string>
           </argument>
         </arguments>
@@ -59,22 +73,30 @@ hasMap = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//--------********************----------
-//TCP
-//Put in ObjOtherPlayer or ObjRecivePacket
-repeat (500)
-{
-  size = receivemessage(playerSocket,0,0);
-  
-  if size&lt;0 {exit;} //Nothing is sent
-  if size==0 {instance_destroy(); exit;} //Player leaves
-  
-  messageid = readbyte(0);
-  
-  
-  ScrMessages(messageid);
-}
-
+            <string>scr_generator_type1_case();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_debuggrid_destroy();
 </string>
           </argument>
         </arguments>
@@ -97,9 +119,7 @@ repeat (500)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(32,32,playerID);
-draw_text(32,64,playerPort);
-draw_text(32,96,playerIP);
+            <string>scr_debug_generator_draw();
 </string>
           </argument>
         </arguments>

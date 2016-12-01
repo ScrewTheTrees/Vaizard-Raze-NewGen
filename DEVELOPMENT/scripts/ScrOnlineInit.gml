@@ -14,3 +14,8 @@ global.udpPortHost = 17651;
 
 
 global.serverIp = "127.0.0.1";
+
+
+global.inMission = true;
+global.readyToGetMap = false;
+global.hasMap = false;

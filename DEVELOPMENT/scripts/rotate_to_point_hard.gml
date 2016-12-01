@@ -1,4 +1,4 @@
-﻿//Usage:
+//Usage:
 //rotate_to_point_hard(x, y, speed)
 var angle_1, angle_2, result, turn_speed,target_dir;
 

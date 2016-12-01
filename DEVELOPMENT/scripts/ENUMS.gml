@@ -46,3 +46,9 @@ PLATFORMER = 1,
 FLIER = 2
 }
 
+enum MODULE {
+EMPTY = 0,
+FLAT = 1,
+STAIR = 2
+}
+
