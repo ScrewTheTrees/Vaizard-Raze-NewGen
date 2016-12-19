@@ -9,3 +9,26 @@ Entity:
 Projectile
 	Alarm[0] = Create sync 
 	Alarm[3] = Before Create Sync
+	
+	
+	
+	
+
+	
+	
+	//PLAYER SHIT
+	
+color[0] = TorsoExtra (Team Color)
+color[1] = Torso
+color[2] = Legs
+color[3] = Hair
+color[4] = Eye Iris
+
+sprite[0] = TorsoExtra
+sprite[1] = Torso
+sprite[2] = Legs
+sprite[3] = Hair
+sprite[4] = Eye/EyeIris
+sprite[5] = Head
+sprite[6] = Weapon Sprite
+sprite[7] = Weapon Arms
