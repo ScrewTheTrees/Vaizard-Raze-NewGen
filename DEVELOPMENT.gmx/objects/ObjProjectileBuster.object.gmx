@@ -57,7 +57,7 @@ image_blend = GetTeamColor(team);
 
 
 
-i=instance_create(x,y,EfxTrail);
+i=SpawnParticle(x,y,EfxTrail);
 i.image_blend=image_blend;
 i.sprite_index=sprite_index;
 </string>

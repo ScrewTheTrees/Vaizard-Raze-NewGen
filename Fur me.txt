@@ -1,9 +1,9 @@
 Entity:
-	Alarm[0] = Create sync
-	Alarm[1] = Info sync
-	Alarm[2] = Move sync
-	Alarm[3] = Before Create Sync
-	Alarm[4] = AI fire Tick
+	Alarm[0] = Entity Create sync
+	Alarm[1] = Entity Info sync
+	Alarm[2] = Entity Move sync
+	Alarm[3] = Before Create Sync (alarm[0])
+	Alarm[4] = AI fire Trigger Tick
 	
 	
 Projectile
@@ -18,7 +18,7 @@ Projectile
 	
 	//PLAYER SHIT
 	
-color[0] = TorsoExtra (Team Color)
+color[0] = TorsoExtra (Always set to "team" color)
 color[1] = Torso
 color[2] = Legs
 color[3] = Hair

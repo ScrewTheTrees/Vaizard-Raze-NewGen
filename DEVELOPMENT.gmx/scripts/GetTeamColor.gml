@@ -10,7 +10,7 @@ var retvar = 0;
 switch (team1)
 {
     case TEAM.PLAYER:
-        retvar = c_green;
+        retvar = c_blue;
         break;
     case TEAM.ENEMY:
     case TEAM.RED:

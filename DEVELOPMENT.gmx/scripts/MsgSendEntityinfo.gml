@@ -1,5 +1,5 @@
 
-if (IsOnline()==true && ownerID=global.playerID)
+if (IsOnline()==true)
     {
     clearbuffer(0);
     writebyte(MSG_ENTITYINFO,0)

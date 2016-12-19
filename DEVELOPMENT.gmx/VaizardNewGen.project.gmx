@@ -159,6 +159,7 @@
         <script>scripts\MsgSendRequestRoom.gml</script>
         <script>scripts\MsgSendPlayerInfoRequest.gml</script>
         <script>scripts\MsgSendRoomGotoRoom.gml</script>
+        <script>scripts\MsgSendForceControl.gml</script>
         <script>scripts\MsgSendTestTCP.gml</script>
         <script>scripts\MsgSendTestUDP.gml</script>
         <script>scripts\MsgSendEntitycreate.gml</script>
@@ -175,6 +176,7 @@
         <script>scripts\MsgReciveRequestRoom.gml</script>
         <script>scripts\MsgRecivePlayerInfoRequest.gml</script>
         <script>scripts\MsgReciveRoomGotoRoom.gml</script>
+        <script>scripts\MsgReciveForceControl.gml</script>
         <script>scripts\MsgReciveTestTCP.gml</script>
         <script>scripts\MsgReciveTestUDP.gml</script>
         <script>scripts\MsgReciveEntitycreate.gml</script>
@@ -196,6 +198,7 @@
       <script>scripts\GetTeamColor.gml</script>
       <script>scripts\ScrEntityResetInput.gml</script>
       <script>scripts\IsOwner.gml</script>
+      <script>scripts\IsAI.gml</script>
       <script>scripts\ScrEntityPlatformerMoveset.gml</script>
       <script>scripts\ScrEntityFreeze.gml</script>
       <script>scripts\ScrEntityOwnedToEntrance.gml</script>
@@ -211,6 +214,7 @@
       <script>scripts\CameraEntitycam.gml</script>
     </scripts>
     <script>scripts\SpawnProjectile.gml</script>
+    <script>scripts\SpawnParticle.gml</script>
     <script>scripts\SpawnEntity.gml</script>
     <script>scripts\DrawTextCenter.gml</script>
     <script>scripts\ScrChangeRoom.gml</script>
@@ -256,6 +260,7 @@
     </scripts>
     <script>scripts\ScrShootSwitcher.gml</script>
     <script>scripts\ScrShootBusterStandard.gml</script>
+    <script>scripts\isOutsideRelevancy.gml</script>
     <script>scripts\ScrPlayerDraw.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -304,7 +309,7 @@
     <room>rooms\Template</room>
     <room>rooms\RoomMissionType1s</room>
   </rooms>
-  <constants number="15">
+  <constants number="16">
     <constant name="MSG_TESTUDP">251</constant>
     <constant name="MSG_TESTTCP">250</constant>
     <constant name="MSG_MAPSEND">30</constant>
@@ -313,6 +318,7 @@
     <constant name="MSG_ENTITYMOVE">12</constant>
     <constant name="MSG_ENTITYINFO">11</constant>
     <constant name="MSG_ENTITYCREATE">10</constant>
+    <constant name="MSG_FORCE_CONTROL">7</constant>
     <constant name="MSG_ROOM_GOTOROOM">6</constant>
     <constant name="MSG_MISSION_NEXTROOM">5</constant>
     <constant name="MSG_PLAYERINFOREQUEST">4</constant>
