@@ -16,4 +16,21 @@ The idea of the game is a sidescrolling platformer for several players with rand
 The engine's Entity system was designed in such a way that players can take control of any unit (including bosses).
 This systems intent was so that i could technically make gamemodes where players face each other in versus and players can control enemies on the fly to halt the progress of the other team of players.
 Also allows for control of bosses and similar.... you get the point, its versatile.
-Several player Classes are planned aswell, each with their own weapons and abilities, also planned for ability slots for player customization.
+Several player Classes are planned aswell, each with their own weapons and abilities.... or common players with selectable weapons/abilities instead of classes.
+
+Online info:
+	TCP port = 17651
+	UDP port (Host) = 17651
+	UDP port (Client) = 17652 to 17659
+
+Debug keys:
+	H = Host.
+	J = Join (127.0.0.1).
+
+	A = Test TCP.
+	S = Test UDP.
+
+	M = Create player character (Need to be host).
+
+	F6 = Go to RoomMissionType1s (Randomely generated map).
+	F11 = Toggle debug drawing.
