@@ -123,7 +123,7 @@ alarm[1] = 240;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Reset controlled/
+            <string>///Reset controlled
 
 if controlled = false &amp;&amp; ownerID!=0
 {
@@ -277,9 +277,9 @@ y=round(y);
 //    draw_self();
 
 
-draw_text(x,y-192,ownerID);
-draw_text(x,y-164,controlled);
-draw_text(x,y-132,entityID);
+draw_text(x,y-192,"Owner: "+string(ownerID));
+draw_text(x,y-164,"IsControlled: "+string(controlled));
+draw_text(x,y-132,"EntityID: "+string(entityID));
 </string>
           </argument>
         </arguments>

@@ -4,7 +4,7 @@ ENUMS();
 ScrOnlineInit();
 ScrPlayerVars();
 
-global.eid = 0;
+global.eid = 1;
 global.entranceID = 0;
 global.debugdraw=false;
 global.particleDiv = 1;

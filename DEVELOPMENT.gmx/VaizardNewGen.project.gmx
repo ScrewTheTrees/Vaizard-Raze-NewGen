@@ -262,6 +262,7 @@
     <script>scripts\ScrShootBusterStandard.gml</script>
     <script>scripts\isOutsideRelevancy.gml</script>
     <script>scripts\ScrPlayerDraw.gml</script>
+    <script>scripts\ForceEntityControl.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Font12A</font>
