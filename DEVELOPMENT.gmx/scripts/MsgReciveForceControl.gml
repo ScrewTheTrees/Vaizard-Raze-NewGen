@@ -6,6 +6,7 @@ if global.isHost==false
     ObjEntityController.spectate=false;
     i.controlled = true;
     i.ownerID = global.playerID;
+    room_goto(i.myroom);
     show_message(d);
     }
     

@@ -91,6 +91,8 @@ if (IsHost())
 {
     play=SpawnEntity(512,512,ObjEntityPlayer,TEAM.PLAYER,1);
     alarm[1]=60;
+    
+    play.myroom=RoomTest1;
 }
 </string>
           </argument>
