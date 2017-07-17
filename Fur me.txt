@@ -32,3 +32,8 @@ sprite[4] = Eye/EyeIris
 sprite[5] = Head
 sprite[6] = Weapon Sprite
 sprite[7] = Weapon Arms
+
+
+
+
+Cinderella escape

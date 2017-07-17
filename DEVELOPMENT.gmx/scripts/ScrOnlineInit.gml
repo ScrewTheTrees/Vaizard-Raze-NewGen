@@ -1,21 +1,16 @@
 dllinit(0,true,true);
 
 
-global.playerID = 0;
-global.isHost = false;
+playerID = 0;
+isHost = false;
 
 
-global.nextID = 0;
+nextID = 0;
 
-global.tcpPort = 17651;
-global.udpPort = irandom_range(17652,17659); //Client ports
+tcpPort = 17651;
+udpPort = irandom_range(17652,17659); //Client ports
 
-global.udpPortHost = 17651;
-
-
-global.serverIp = "127.0.0.1";
+udpPortHost = 17651;
 
 
-global.inMission = true;
-global.readyToGetMap = false;
-global.hasMap = false;
+serverIp = "127.0.0.1";

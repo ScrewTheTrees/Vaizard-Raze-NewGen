@@ -198,6 +198,7 @@
       <script>scripts\GetTeamColor.gml</script>
       <script>scripts\ScrEntityResetInput.gml</script>
       <script>scripts\IsOwner.gml</script>
+      <script>scripts\IsOwnerID.gml</script>
       <script>scripts\IsAI.gml</script>
       <script>scripts\ScrEntityPlatformerMoveset.gml</script>
       <script>scripts\ScrEntityFreeze.gml</script>
